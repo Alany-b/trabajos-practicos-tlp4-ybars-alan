@@ -19,35 +19,9 @@ El objetivo general es aprender a escribir código **mantenible, testeable y bie
 | [`tlp4-introduccion-testing-main`](./tlp4-introduccion-testing-main) | Calidad y pruebas automatizadas | Express, Vitest, Supertest, GitHub Actions |
 
 ---
-
-## 1. `pilares-POO` — Fundamentos de la programación orientada a objetos
-
-Cinco ejercicios introductorios, cada uno enfocado en un concepto central de la POO:
-
-- **Abstracción y clases** (`ej1.ts`): modelo de un `Producto` con stock, ventas, validaciones y cálculo de descuentos. Se practica el uso de `this`, métodos, propiedades y manejo de errores con `try/catch`.
-- **Encapsulamiento** (`ej2.ts`): una `CuentaBancaria` con saldo e historial privados. Se protege el estado interno mediante métodos públicos, `readonly` y copias defensivas del historial.
-- **Herencia** (`ej3.ts`): clase base `Empleado` y subclase `EmpleadoFijo`, con `extends`, `super()` y sobrescritura de métodos.
-- **Polimorfismo** (`ej4.ts`): distintos tipos de empleado (fijo, por horas, por comisión) que calculan su sueldo de forma propia; una misma función `calcularNomina` los trata a todos por igual.
-- **Getters y setters** (`ej5.ts`): la clase `Persona` valida edad y email antes de guardarlos y expone propiedades calculadas de solo lectura.
-
-**Ejecutar:** `npm install` y luego `npm run ej1` … `npm run ej5`.
-
 ---
 
-## 2. `patrones-diseno-practica-main` — Patrones de diseño
-
-Implementaciones de patrones clásicos sobre un mismo dominio: la gestión de un inventario de equipos.
-
-- **Singleton** (`ej1.ts`): `Inventario` garantiza una única instancia compartida mediante un constructor privado y un método estático `obtenerInstancia()`.
-- **Factory Method** (`ej2.ts`): `EquipoFactory` crea `Notebook`, `Desktop` o `Servidor` a partir de un tipo, devolviendo siempre un tipo común (`Equipo`) sin que el cliente conozca las clases concretas.
-- **Observer** (`ej3.ts`): un `Equipo` notifica automáticamente a sus observadores (por ejemplo, `Soporte`) cada vez que cambia de estado, dependiendo de una interfaz y no de clases concretas.
-- **Adapter** (`ej4.ts`): `AdaptadorInventario` conecta un inventario antiguo (`agregarItem` / `listarItems`) con la interfaz nueva (`agregarEquipo` / `listarEquipos`) sin modificar el código legado.
-
-**Ejecutar:** `npm install` y luego `npm run ej1` … `npm run ej4`.
-
----
-
-## 3. `practica-SOLID-main` — Principios SOLID
+## 1. `practica-SOLID-main` — Principios SOLID
 
 Cinco ejercicios donde se parte de un código que funciona pero está mal diseñado, y se lo refactoriza aplicando un principio por archivo. Cada ejercicio incluye las preguntas de análisis respondidas como comentarios.
 
@@ -61,7 +35,7 @@ Cinco ejercicios donde se parte de un código que funciona pero está mal diseñ
 
 ---
 
-## 4. `refactorizacionServidorExpress-main` — Refactorización de una API
+## 2. `refactorizacionServidorExpress-main` — Refactorización de una API
 
 Una API de empleados que originalmente tenía toda la lógica dentro de `server.ts` (`server-old.ts`) y fue reorganizada en capas con responsabilidades bien definidas:
 
@@ -89,7 +63,7 @@ npm run dev
 
 ---
 
-## 5. `tlp4-introduccion-testing-main` — Calidad y pruebas de software
+## 3. `tlp4-introduccion-testing-main` — Calidad y pruebas de software
 
 Material teórico y un laboratorio práctico sobre pruebas automatizadas en una API de precios con Express.
 
