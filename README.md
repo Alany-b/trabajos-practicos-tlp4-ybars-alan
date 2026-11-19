@@ -99,6 +99,4 @@ npm run dev          # servidor en http://localhost:3000
 
 ---
 
-## Conclusión
 
-Los trabajos siguen una progresión: primero se comprenden los **pilares de la POO**, luego se aplican **patrones de diseño** y **principios SOLID**, después se llevan esos conceptos a una **API real refactorizada por capas**, y finalmente se incorporan **pruebas automatizadas** para verificar que el comportamiento se mantiene. En conjunto, el repositorio documenta el proceso de pasar de código que simplemente "funciona" a código que además es claro, extensible y confiable.
